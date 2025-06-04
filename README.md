@@ -91,9 +91,7 @@ youtrack-ticket-extension/
 Pour créer une version installable dans Thunderbird :
 
 ```bash
-rm -rf youtrack-extension.xpi
-zip -r youtrack-extension.zip ./*
-mv youtrack-extension.zip youtrack-extension.xpi
+rm -rf youtrack-extension.xpi && zip -r youtrack-extension.zip ./* && mv youtrack-extension.zip youtrack-extension.xpi
 ```
 
 Tu peux ensuite la charger dans Thunderbird comme extension temporaire.
