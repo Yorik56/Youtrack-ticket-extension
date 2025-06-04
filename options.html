@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Options YouTrack</title>
+    <link rel="stylesheet" href="./pico-main/css/pico.css">
+    <style>
+        main {
+            max-width: 600px;
+            margin: 4rem auto;
+        }
+        #success-message {
+            display: none;
+            margin-top: 1rem;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h2>⚙️ Configuration YouTrack</h2>
+    <form id="options-form">
+        <label for="yt-url">URL de l'instance YouTrack :</label>
+        <input type="text" id="yt-url" placeholder="http://localhost:8080" required>
+
+        <label for="yt-token">Token API :</label>
+        <input type="text" id="yt-token" placeholder="perm:XXXXX" required>
+
+        <label for="yt-project">Projet ID :</label>
+        <input type="text" id="yt-project" placeholder="DEMO" required>
+
+        <button type="submit">Enregistrer</button>
+        <p id="success-message" style="display: none; color: green; margin-top: 1rem;">
+            ✅ Paramètres enregistrés avec succès !
+        </p>
+    </form>
+</main>
+
+<script src="options.js"></script>
+</body>
+</html>

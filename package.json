@@ -1,0 +1,17 @@
+{
+  "name": "youtrack-ticket-extension",
+  "version": "1.0.0",
+  "description": "Cette extension Thunderbird ajoute un bouton \"Créer un ticket\" qui permet de transformer un email en ticket dans une instance YouTrack auto-hébergée.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mailparser": "^3.7.3"
+  }
+}
